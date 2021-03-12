@@ -34,6 +34,7 @@ El objetivo de este proyecto es hacer uso de dichas herramientas para crear una 
 ## Pruebas
  >El funcionamiento de la aplicación se puede apreciar en las siguientes imágenes:
  >![](img/demo.png)
+ >
  >Se añade una nueva cadena:
  >![](img/demo2.png)
 
