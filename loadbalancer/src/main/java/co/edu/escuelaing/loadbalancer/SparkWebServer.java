@@ -8,11 +8,18 @@ public class SparkWebServer {
         port(getPort());
         staticFileLocation("/static");
         LoadBalancerClient cliente = new LoadBalancerClient();
-        get("/consultar", (req, res) -> {
+        get("/get", (req, res) -> {
             res.status(200);
-            String url= "http://3.95.0.198:";
+            String url= "http://172.17.0.1:";
             cliente.changePort();
             return cliente.getResponse(url);
+        });
+        
+        post("/post", (req, res) -> {
+            String url= "http://172.17.0.1:";
+            cliente.postResponse(url, req.body());
+            cliente.changePort();
+            return "";
         });
     }
 

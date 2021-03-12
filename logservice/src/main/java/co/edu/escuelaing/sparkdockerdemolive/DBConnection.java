@@ -5,8 +5,10 @@ import com.mongodb.DBCollection;
 import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
+import com.mongodb.client.MongoDatabase;
 import java.util.List;
-
+import org.json.JSONObject;
+import org.bson.Document;
 
 /**
  *
@@ -26,6 +28,19 @@ public class DBConnection {
 
     public List<DBObject> getMessage() {
         List<DBObject> data = test.find().toArray();
-        return data;
+        System.out.println(data.size());
+        if (data.size() <= 10) {
+            return data;
+        } else {
+            return data.subList(Math.max(data.size() - 10, 0), data.size());
+        }
+    }
+
+    public void addMessage(String source) {
+        JSONObject message = new JSONObject(source);
+        MongoDatabase dataBase2 = mongoClient.getDatabase("cadenas");
+        Document document = new Document();
+        document.append("valor", message.get("valor"));
+        dataBase2.getCollection("valores").insertOne(document);
     }
 }

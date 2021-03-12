@@ -1,4 +1,4 @@
-table, th, td {
+table, th, td, input {
   border: 1px solid black;
 }
 
@@ -8,4 +8,17 @@ body {
 
 th {
   background-color: linen;
+}
+
+button {
+  background-color: linen;
+  border: 1px solid black;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+#licence {
+  color: lightgray;
+  font-size: 12px;
 }

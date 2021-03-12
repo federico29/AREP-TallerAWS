@@ -7,10 +7,13 @@
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <link rel="stylesheet" href="css/estilos.css">
     </head>
-    <body>
+    <body onload="apiclient.run()">
         <h1>AREP Docker y AWS</h1>
-        <label for="consultar">Mensajes ingresados</label>
-        <button id="consultar" onClick="apiclient.run()">Consultar</button>
+        <label for="consultar">Messages</label>
+        </br>
+        <input type="text" id="mensaje" placeholder="Type something">
+        <button id="enviar" onclick="apiclient.sendMessage()"><b>Send</b></button>
+        </br>
         </br>
         <table style="width:50%" id="table" class="table">
             <tr>
@@ -20,5 +23,7 @@
             </tr>
             <tbody id="cuerpo"></tbody>
         </table>
+        </br>
+        <label id="licence">This website is licensed under the GNU General Public License v3.0 - Federico Barrios Meneses</label>
     </body>
 </html>

@@ -19,6 +19,12 @@ public class LoadBalancerClient {
         return apiResponse.getBody();
     }
 
+    public String postResponse(String url, String mensaje) throws UnirestException {
+        HttpResponse<String> apiResponse = Unirest.post(url + ports[currentPort]).body(mensaje).asString();
+        System.out.println("Post request taken by port: " + ports[currentPort]);
+        return apiResponse.getBody();
+    }
+
     public void changePort() {
         currentPort = (currentPort + 1) % ports.length;
     }

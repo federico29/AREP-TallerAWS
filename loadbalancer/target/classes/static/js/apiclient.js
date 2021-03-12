@@ -1,8 +1,19 @@
 var apiclient = (function () {
-    var url = window.location.href + "consultar";
+    var urlGet = window.location.href + "get";
+    var urlPost = window.location.href + "post";
+
+    function sendMessage() {
+        var mensaje = document.getElementById("mensaje").value;
+        console.log(mensaje);
+        axios.post(urlPost, {"valor": mensaje})
+                .then(res => {
+                    getMessage();
+                }
+                );
+    }
 
     function getMessage() {
-        axios.get(url).then(res => {
+        axios.get(urlGet).then(res => {
             var datos = res.data;
             var num = 1;
             $("#cuerpo").html("");
@@ -20,11 +31,12 @@ var apiclient = (function () {
     }
 
     function run() {
-        console.log(url);
+        console.log(urlGet);
         return getMessage();
     }
 
     return {
-        run: run
+        run: run,
+        sendMessage:sendMessage
     };
 })();
