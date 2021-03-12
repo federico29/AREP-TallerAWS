@@ -56,4 +56,5 @@ Puede ver el resultado final de la aplicación [aquí](http://ec2-3-95-0-198.com
 Este proyecto está bajo la [Licencia GNU General Public License](https://github.com/federico29/AREP-TallerAWS/blob/master/LICENSE.txt).
 
 ## Insignias
-https://www.code-inspector.com/project/20073/status/svg
+[![Code Grade](https://www.code-inspector.com/project/20073/status/svg)](https://frontend.code-inspector.com/project/20073/dashboard)
+
