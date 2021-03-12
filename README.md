@@ -15,9 +15,9 @@ El objetivo de este proyecto es hacer uso de dichas herramientas para crear una 
 Puede ver el resultado final de la aplicación [aquí](http://ec2-3-95-0-198.compute-1.amazonaws.com:20000/).
 
  >Para ver el código fuente del proyecto:
-```
-git clone https://github.com/federico29/AREP-TallerAWS.git
-```
+ >```
+ >git clone https://github.com/federico29/AREP-TallerAWS.git
+ >```
 
 >Puede consultar las imágenes de Docker utilizadas [aquí](https://hub.docker.com/r/fede2906b/first-spark-java-repository/tags?page=1&ordering=last_updated).
 
