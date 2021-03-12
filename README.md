@@ -32,6 +32,16 @@ Puede ver el resultado final de la aplicación [aquí](http://ec2-3-95-0-198.com
         docker pull fede2906b/first-spark-java-repository:database
 	    ```
 
+## Documentación
+> Documentación del servicio LogService: [Documentacion](https://federico29.github.io/AREP-TallerAWS/logservice/Documentacion/).
+
+> Documentación del servicio LoadBalancer: [Documentacion](https://federico29.github.io/AREP-TallerAWS/loadbalancer/Documentacion/).
+
+> Puede generar la documentación del proyecto ejecutando el siguiente comando en el directorio AREP-TallerAWS/loadbalancer/ o AREP-TallerAWS/logservice/:
+	```
+	mvn javadoc:javadoc
+	    ```
+
 ## Construido con
 - Maven
 - Java 8
