@@ -71,6 +71,8 @@ Una vez tenga las tres imágenes en su computador ejecute en una consola de coma
 >docker run -d -p 27017:27017 --name database fede2906b/first-spark-java-repository:database
 >```
 
+Corra la aplicación ingresando al siguiente link: [http://localhost:20000/](http://localhost:20000/)
+
 ## Pruebas
  >El funcionamiento de la aplicación se puede apreciar en las siguientes imágenes:
  >![](img/demo.png)
