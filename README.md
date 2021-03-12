@@ -10,6 +10,7 @@ El objetivo de este proyecto es hacer uso de dichas herramientas para crear una 
 - [Maven](https://maven.apache.org/download.cgi)
 - [GIT](https://git-scm.com/downloads)
 - [Docker](https://docs.docker.com/desktop/)
+- [MongoDB](https://docs.docker.com/desktop/)
   
 ### Instalación
 
@@ -29,6 +30,45 @@ El objetivo de este proyecto es hacer uso de dichas herramientas para crear una 
 >```
 >```
 >docker pull fede2906b/first-spark-java-repository:database
+>```
+
+## Ejecución
+Cambie las siguientes líneas de código:
+>En el directorio **AREP-TallerAWS/loadbalancer/src/main/java/co/edu/escuelaing/loadbalancer** modifique la clase SparkWebServer.java cambiando la dirección IP 172.17.0.1 por la dirección IP de su máquina local en las líneas 23 y 29.
+
+>En el directorio **AREP-TallerAWS/logservice/src/main/java/co/edu/escuelaing/sparkdockerdemolive** modifique la clase DBConnection.java cambiando la dirección IP 172.17.0.1 por la dirección IP de su máquina local en la línea 28.
+
+Ahora cree las imágenes con las modificaciones hechas:
+>En el directorio AREP-TallerAWS/loadbalancer abra una consola de comandos y ejecute: 
+>```
+>docker build --tag loadbalancer .
+>```
+
+>En el directorio AREP-TallerAWS/logservice abra una consola de comandos y ejecute: 
+>```
+>docker build --tag logservice .
+>```
+
+>En una consola de comandos ejecute:
+>```
+>docker pull fede2906b/first-spark-java-repository:database
+>```
+
+Una vez tenga las tres imágenes en su computador ejecute en una consola de comandos las siguientes líneas:
+>```
+>docker run -d -p 20000:7000 --name roundrobin loadbalancer
+>```
+>```
+>docker run -d -p 35001:6000 --name logservice1 logservice
+>```
+>```
+>docker run -d -p 35002:6000 --name logservice2 logservice
+>```
+>```
+>docker run -d -p 35003:6000 --name logservice3 logservice
+>```
+>```
+>docker run -d -p 27017:27017 --name database fede2906b/first-spark-java-repository:database
 >```
 
 ## Pruebas
