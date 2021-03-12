@@ -6,7 +6,6 @@ El objetivo de este proyecto es hacer uso de dichas herramientas para crear una 
 
 ## ¿Cómo empezar?
 ### Requerimientos
-Las siguientes herramientas son necesarias para que este proyecto funcione correctamente en su máquina:
 - [Java 8](https://www.java.com/es/)
 - [Maven](https://maven.apache.org/download.cgi)
 - [GIT](https://git-scm.com/downloads)
@@ -44,4 +43,4 @@ Puede ver el resultado final de la aplicación [aquí](http://ec2-3-95-0-198.com
 - Federico Barrios Meneses - Estudiante de Ingeniería de Sistemas.
 
 ## Licencia
-Este proyecto está bajo la [Licencia GNU General Public License]().
+Este proyecto está bajo la [Licencia GNU General Public License](https://github.com/federico29/AREP-TallerAWS/blob/master/LICENSE.txt).
