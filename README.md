@@ -31,6 +31,12 @@ El objetivo de este proyecto es hacer uso de dichas herramientas para crear una 
 >docker pull fede2906b/first-spark-java-repository:database
 >```
 
+## Pruebas
+ >El funcionamiento de la aplicación se puede apreciar en las siguientes imágenes:
+ >![](img/demo.png)
+ >Se añade una nueva cadena:
+ >![](img/demo2.png)
+
 ## Documentación
 > Documentación del servicio LogService: [Documentacion](https://federico29.github.io/AREP-TallerAWS/logservice/Documentacion/).
 
@@ -53,7 +59,4 @@ El objetivo de este proyecto es hacer uso de dichas herramientas para crear una 
 
 ## Licencia
 Este proyecto está bajo la [Licencia GNU General Public License](https://github.com/federico29/AREP-TallerAWS/blob/master/LICENSE.txt).
-
-## Insignias
-[![Code Grade](https://www.code-inspector.com/project/20073/status/svg)](https://frontend.code-inspector.com/project/20073/dashboard)
 
