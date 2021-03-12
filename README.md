@@ -22,15 +22,15 @@ Puede ver el resultado final de la aplicación [aquí](http://ec2-3-95-0-198.com
 >Puede consultar las imágenes de Docker utilizadas [aquí](https://hub.docker.com/r/fede2906b/first-spark-java-repository/tags?page=1&ordering=last_updated).
 
 >Para obtener una copia de las imágenes puede ejecutar los siguientes comandos:
-        ```
-        docker pull fede2906b/first-spark-java-repository:loadbalancer
-	    ```
-	    ```
-        docker pull fede2906b/first-spark-java-repository:logservice
-	    ```
-	    ```
-        docker pull fede2906b/first-spark-java-repository:database
-	    ```
+>```
+>docker pull fede2906b/first-spark-java-repository:loadbalancer
+>```
+>```
+>docker pull fede2906b/first-spark-java-repository:logservice
+>```
+>```
+>docker pull fede2906b/first-spark-java-repository:database
+>```
 
 ## Documentación
 > Documentación del servicio LogService: [Documentacion](https://federico29.github.io/AREP-TallerAWS/logservice/Documentacion/).
@@ -38,9 +38,9 @@ Puede ver el resultado final de la aplicación [aquí](http://ec2-3-95-0-198.com
 > Documentación del servicio LoadBalancer: [Documentacion](https://federico29.github.io/AREP-TallerAWS/loadbalancer/Documentacion/).
 
 > Puede generar la documentación del proyecto ejecutando el siguiente comando en el directorio AREP-TallerAWS/loadbalancer/ o AREP-TallerAWS/logservice/:
-	```
-	mvn javadoc:javadoc
-	    ```
+> ```
+> mvn javadoc:javadoc
+> ```
 
 ## Construido con
 - Maven
